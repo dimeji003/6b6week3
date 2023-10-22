@@ -1,0 +1,72 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 250px);
+    grid-template-areas:
+    "h h i b"
+    "h h k b"
+    "j e d b"
+    "g f c b"
+    "a a a a";
+    border: none;
+    gap: 20px 20px;
+}
+section:nth-of-type(odd){
+    border: 5px none red;
+}
+section:nth-of-type(even){
+    border: 5px none blue;
+
+}
+
+section:nth-of-type(1){
+    grid-area: a;
+}
+section:nth-of-type(2){
+    grid-area: b;
+}
+section:nth-of-type(3){
+    grid-area: c;
+}
+section:nth-of-type(4){
+    grid-area: d;
+}
+section:nth-of-type(5){
+    grid-area: e;
+}
+section:nth-of-type(6){
+    grid-area: f;
+}
+section:nth-of-type(7){
+    grid-area: g;
+}
+section:nth-of-type(8){
+    grid-area: h;
+    background-image: url(./media/photo1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section:nth-of-type(9){
+    grid-area: i;
+}
+section:nth-of-type(10){
+    grid-area: j;
+}
+section:nth-of-type(11){
+    grid-area: k;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 100px;
+    align-items: center;
+
+}
+
+nav a{
+    text-decoration: none;
+
+}

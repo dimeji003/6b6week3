@@ -1,0 +1,33 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap: 1em;
+} 
+
+
+
+
+
+
+
+section:nth-of-type(even){
+    border: 5px solid black;
+    border-radius: 2em 0 2em;
+}
+section:nth-of-type(odd){
+    border: 5px solid red;
+    border-radius: 0 2em 0 2em;
+
+}
+
+section :nth-child(odd){
+    background-color: #ccc;
+    color: #000;
+}
+section :nth-child(even){
+    color: blue;
+}
+
+
+
