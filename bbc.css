@@ -215,17 +215,17 @@ nav ul li a {
 }
 #img1{
     height: 220px;
-    background-image: url(./media/photo1.webp);
+    background-image: url(./media/photo2.webp);
     background-position: absolute;
 }
 #img2{
     height: 220px;
-    background-image: url(./media/photo1.webp);
+    background-image: url(./media/photo2.webp);
     background-position: absolute;
 }
 #img3{
     height: 220px;
-    background-image: url(./media/photo1.webp);
+    background-image: url(./media/photo2.webp);
     background-position: absolute;
 }
 #thirdgrid{
@@ -408,8 +408,8 @@ nav ul li a {
 #eighthgrid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 160px);
-    gap: 15px;
+    grid-template-rows: repeat(6, 200px);
+    gap: 10px;
     margin-left: 50px;
     margin-right: 40px;
     margin-top: 20px;
@@ -422,7 +422,8 @@ nav ul li a {
 #eighthgrid section:nth-of-type(1){
     grid-area: 1/1/3/4;
     background-image: url(./media/photo6.webp);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #eighthgrid section:nth-of-type(2){
     grid-area: 3/1/5/2;
@@ -449,14 +450,26 @@ nav ul li a {
     height: 170px;
     background-image: url(./media/photo4.webp);
 }
+#eighthgrid h1{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 10px;
+    padding-top: 300px;
+    font-size: 2rem;
+}
+#eighthgrid span{
+    color: #575757;
+    margin-left: 10px;
+    padding-top: 370px;
+}
 #eighthgrid h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     margin-left: 10px;
     font-size: 1.3rem;
     margin-top: 6px;
 }
-#eightgrid p{
-    font-family: Arial, Helvetica, sans-serif;
+#eighthgrid p{
+    font-family: sans-serif;
     margin-left: 10px;
 }
 #futureplanetgrid{
@@ -464,8 +477,10 @@ nav ul li a {
     grid-template-columns: repeat(1, 4fr);
     grid-template-rows: repeat(1, 400px);
     margin-top: 25px;
-    background: url(./media/photo3.webp);
+    background: url(./media/photo5.webp);
     background-size: cover;
+    background-repeat: repeat;
+
    
 }
 
@@ -489,9 +504,9 @@ nav ul li a {
 #futureplanet-p{
     margin-left: 50px;
     margin-top: 13px;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    color: white
 }
 
 #grid7{
@@ -508,8 +523,44 @@ nav ul li a {
 }
 #img11 , #img12{
     margin-top: 8px;
-    height: 300px;
+    height: 250px;
     background-image: url(./media/photo2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#grid7 p{
+    padding-left: 8.5px;
+    font-size: .9rem;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#grid7 h2{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#grid7text1 , #grid7text2{
+    margin-top: 0;
+    padding-top: 0;
+    height: 100px;
+}
+#businessbar , #subscribebar{
+    line-height: 10px;
+    background-color: white;
+    border-left: solid red;
+    border-width: .125rem;
+    margin-top: 15px;
+}
+
+
+
+
+
+#techofbusiness-p a{
+    text-decoration: none;
+    color: rgb(81, 77, 77);
 }
 #newsletter-p a{
     text-decoration: none;
@@ -532,6 +583,22 @@ nav ul li a {
 }
 #grid9{
     border: 2px solid;
+    background-image: url(./media/photo6.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#grid9img{
+    background-image: url(./media/photo3.webp);
+}
+#grid9 h2{
+    color: white;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+#grid9 p{
+    color: #575757;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
 }
 #back-module2{
     background-color: rgba(255, 255, 255, 0);
@@ -546,6 +613,7 @@ nav ul li a {
     height: 1000px;
     background-color: rgba(191, 183, 183, 0.141);
     padding-top: 30px;
+    margin-bottom: 30px;
     
 }
 #grid10{
@@ -557,13 +625,17 @@ nav ul li a {
     gap: 15px;
 }
 #grid10 section{
-    border: 2px solid;
+    border: 2px none;
 }
 #grid10 section:nth-of-type(1){
     grid-area: 1/1/5/3;
+    background-color: rgb(90, 90, 90);
 }
 #grid10 section:nth-of-type(2){
     grid-area: 1/3/3/6;
+    background-image: url(./media/photo3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #grid10 section:nth-of-type(3){
     grid-area: 3/3/4/4;
@@ -583,16 +655,50 @@ nav ul li a {
 #grid10 section:nth-of-type(8){
     grid-area: 4/5/5/6;
 }
+#img14 , #img15 , #img16 , #img17 , #img18 , #img19{
+    height: 120px;
+    background-image: url(./media/photo2.webp);
+}
+#grid10 h2{
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 #grid11{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(1, 350px);
     margin-left: 50px;
     margin-right: 40px;
-    gap: 10px;
+    gap: 13px;
 }
 #grid11 section{
-    border: 2px solid;
+    border: 2px none;
+    
+}
+#grid11 span{
+    padding-top: 15px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #575757;
+    
+}
+#img20 , #img21{
+    height: 92%;
+    background-image: url(./media/photo4.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+}
+#grid11 h2{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding-top: 260px;
+    margin-left: 10px;
 }
 #module4{
     margin-top: 30px;
@@ -609,14 +715,19 @@ nav ul li a {
     
 }
 #grid12 section{
-    border: 2px solid;
+    border: 2px none;
 }
 
 #grid12 section:nth-of-type(1){
     grid-area: 1/1/2/4;
+    background-image: url(./media/photo-reel.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #grid12 section:nth-of-type(2){
     grid-area: 1/4/2/7;
+    background-image: url(./media/photo1.webp);
+    background-size: cover;
 }
 #grid12 section:nth-of-type(3){
     grid-area: 2/1/3/3;
@@ -626,6 +737,25 @@ nav ul li a {
 }
 #grid12 section:nth-of-type(5){
     grid-area: 2/5/3/7;
+}
+#img24 , #img25 , #img26{
+    height: 200px;
+    background-image: url(./media/photo3.webp);
+}
+
+#grid12 h2{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 1.16rem;
+    margin-left: 6px;
+    color: #272727;
+    
+}
+#grid12-h{
+    padding-top: 250px;
+    color: white;
+    margin-left: 8px;
+    font-family: sans-serif;
 }
 #module5{
     margin-top: 30px;
@@ -653,6 +783,7 @@ nav ul li a {
 #footer{
     background-color: grey;
     line-height: 270px;
+    
 }
 
 
